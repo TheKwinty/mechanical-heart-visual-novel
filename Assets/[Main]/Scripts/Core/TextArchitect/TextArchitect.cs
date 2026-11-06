@@ -5,26 +5,19 @@ using System.Reflection;
 using System.Linq;
 using System;
 
-/// <summary>
-/// Stellar Studio's Text Architect System: The TextArchitect is responsible for building text on the screen in any of several configured ways. Meant to simplfy dialogue generation.
-/// </summary>
 public class TextArchitect
 {
     private TextMeshProUGUI tmpro_ui;
     private TextMeshPro tmpro_world;
 
-    /// <summary>
-    /// The assigned text component for this architect.
-    /// </summary>
+    //призначаєто текстовий компотент до архітектора
     public TMP_Text tmpro => tmpro_ui != null ? tmpro_ui : tmpro_world;
 
-    /// <summary>
-    /// The text built by this architect.
-    /// </summary>
+    // Текст буде побудований цим архітектором
     public string currentText => tmpro.text;
     /// <summary>
-    /// The current text that this architect is trying to build. This is excluding any pretext that might be assigned for appending text.
-    /// </summary>
+    /// Поточний текст який намагається побудувати цей архітектор
+    /// </summary> 
     public string targetText { get; private set; } = "";
     /// <summary>
     /// The full text that this architect is trying to display, including the pre text that may have existed before appending the new target text..

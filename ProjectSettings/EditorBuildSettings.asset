@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/[Main]/Scenes/SpleshScreen.unity
+    guid: 1d49412c4c4df2047a835b445b85b550
+  - enabled: 1
+    path: Assets/[Main]/Scenes/MainMenu.unity
+    guid: f44feeea13346324b9427ef76a1ec3c2
+  - enabled: 1
+    path: Assets/[Main]/Scenes/VisualNovel.unity
+    guid: f778c96694d849e4b8022e33337a92e0
   m_configObjects: {}
